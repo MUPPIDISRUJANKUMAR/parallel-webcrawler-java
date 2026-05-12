@@ -1,0 +1,14 @@
+{
+  "startPages": [
+    "https://example.com"
+  ],
+  "ignoredUrls": [],
+  "ignoredWords": [],
+  "parallelism": 1,
+  "implementationOverride": "com.udacity.webcrawler.SequentialWebCrawler",
+  "maxDepth": 2,
+  "timeoutSeconds": 10,
+  "popularWordCount": 5,
+  "profileOutputPath": "",
+  "resultPath": ""
+}
