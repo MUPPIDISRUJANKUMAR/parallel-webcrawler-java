@@ -9,6 +9,7 @@ import java.time.Instant;
 import java.util.Map;
 import java.util.Set;
 import java.util.ArrayList;
+import java.util.concurrent.ForkJoinTask;
 
 import com.udacity.webcrawler.json.CrawlResult;
 
@@ -73,9 +74,7 @@ final class ParallelWebCrawler implements WebCrawler {
                       visitedUrls));
     }
 
-    for (CrawlerTask task : tasks) {
-      pool.invoke(task);
-    }
+    ForkJoinTask.invokeAll(tasks);
 
     if (counts.isEmpty()) {
 
