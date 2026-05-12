@@ -22,3 +22,14 @@ An advanced Java web crawler built using parallel processing with the ForkJoin F
 
 ```bash
 mvn package
+```
+
+```bash
+java -classpath target/udacity-webcrawler-1.0.jar com.udacity.webcrawler.main.WebCrawlerMain src/main/config/sample_config.json
+```
+
+## Test the Project
+
+```bash
+mvn test
+```
